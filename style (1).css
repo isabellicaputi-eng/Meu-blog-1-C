@@ -1,3 +1,6 @@
+body {
+    max-width: 100vw;
+}
 header{
   background-color: #e0ff57;
   color: #9d9c9d;
@@ -8,14 +11,30 @@ header{
    border: 5px solid #e0ff57;
 }
  main { 
-     background-color: #4400ff;
+     background-color: #e0ff57;
         color: #9d9c9d;
         max-width: 850px;
         margin: 0 auto;
         padding: 16px;
+
+        display: flex;
+        flex-wrap: wrap;
 }
 article{
      display: flex;
+
+     border: 1px solid #9d9c9d;
+
+     margin: 16px;
+     gap: 16px;
+     padding: 16px;
+
+     flex: 1 1 25%;
+
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
 }
 
 img{
