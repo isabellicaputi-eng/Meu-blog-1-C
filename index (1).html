@@ -5,38 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mitologia</title>
-        <style>
-          header{
-           background-color: #e0ff57;
-           color: #9d9c9d;
-           text-align: center;
-           max-width: 850px;
-           margin: 0 auto;
-           padding: 16px;
-           border: 5px solid #e0ff57;
-          }
-         main { 
-            background-color: #4400ff;
-            color: #9d9c9d;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        article{
-             display: flex;
-         }
-
-         img{
-            width: 80px;
-            height: 80px;
-         }
-
-         .artigo-autor{
-            font-weight: bold;
-         }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
         <header>
             <h1>Meu blog sobre mitologia</h1>
@@ -70,28 +41,7 @@
         </div>
         </article>
     </main>
+    <script src="script.js"></script>
     </body>
-    <script> 
-        const botoes = document.querySelectorAll("button");
 
-        botoes.forEach(function(botao){
-            let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado(){
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                if (curtiu === false){
-                    texto.textContent++;
-                    curtiu = true;
-                } else{
-                    texto.textContent--;
-                    curtiu = false;
-                }
-                
-            }
-
-        } )
-
-
-    </script>
 </html
