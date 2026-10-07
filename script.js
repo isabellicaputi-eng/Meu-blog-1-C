@@ -18,3 +18,16 @@ const botoes = document.querySelectorAll("button");
 
         } )
 
+const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
+
+ btnTemaEscuro.addEventListener("click",mudaTema);
+
+ function mudaTema() {
+    const corpoPagina = document.body;
+    if (corpoPagina.classlist.contains("Tema-Escuro")) {
+        corpoPagina.classlist.remove("Tema-Escuro");
+    } else {
+        corpoPagina.classlist.add("Tema-Escuro");
+
+    }
+ }
